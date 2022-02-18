@@ -34,13 +34,12 @@ html{
 }
 .navigation {
     display: flex;
+    
     width: 1060px;
     margin: 0 auto;
 }
 .navigation {
-    display: flex;
-    width: 1060px;
-    margin: 0 auto;
+   
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-size: 20px;
@@ -52,6 +51,7 @@ html{
     text-decoration: none;
 } 
 .navigation-list{
+    
     display: flex;
     width: 350px;
     margin: 0;
@@ -121,6 +121,7 @@ html{
     margin: 0;
     padding: 0;
     display: flex;
+    
    justify-content: space-between;
    font-family:"PT Sans";
    font-style: normal;
@@ -131,11 +132,16 @@ html{
    text-align:Center;
 }
 .advantages-list {
+    
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     text-align: center;
+    
+}.enumeration{
+    
+    display:flex;
     
 }
 .advantage-item{
@@ -373,6 +379,7 @@ html{
     text-align: left;
 }
 .breadcrumbs{
+    display: flex;
     font-family: "PT Sans";
     font-weight: 400;
     font-size: 16px;
@@ -389,7 +396,7 @@ html{
 .catalog-filter{
     display: flex;
 }
-.catalog-group{
+.catalog-group {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -405,7 +412,7 @@ html{
     line-height: 23px; 
     text-align: left;
 }
-.filter-interval{
+.filter-interval {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -450,6 +457,7 @@ html{
 .button{
     display: flex;
 }
+
 .sorting-block{
     display: flex;
     justify-content: space-between;
@@ -458,7 +466,7 @@ html{
     margin: 0 auto;
 }
 .select-control{
-    font-family: PT Sans; 
+    font-family: "PT Sans"; 
     font-size: 18px;
     line-height: 23px; 
     color: #333333;
@@ -603,6 +611,9 @@ html{
     color: #FFFFFF;
     background-color: #83B3D3;
 }
+.page-numbering{
+    display: flex;
+}
 .number{
     font-family: "PT Sans";
     font-style: normal;
@@ -622,4 +633,6 @@ html{
 .main-inner .mailing{
     background-image: none;
     }
-
+    .sorting-block .sorting{
+        display: flex;
+    }
