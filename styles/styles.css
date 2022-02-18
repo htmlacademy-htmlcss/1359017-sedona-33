@@ -52,12 +52,14 @@ html{
     text-decoration: none;
 } 
 .navigation-list{
+    display: flex;
     width: 350px;
     margin: 0;
     padding: 0;
 }
 
 .navigation-user{
+    display: flex;
     max-width:270px;
     margin-left: auto;
     font-size: 16px; 
@@ -137,7 +139,8 @@ html{
     
 }
 .advantage-item{
-    width: 400;
+    display: flex;
+    width: 400px;
 }
 .advantage-item:nth-child(n+2):nth-child(-n+4) .advantage-diskription{
     color:  #333333;
@@ -331,6 +334,7 @@ html{
 }
 
 .social-media-list {
+    display: flex;
     width: 107px;
     margin: 0;
     padding: 0;
@@ -381,6 +385,9 @@ html{
     background-image: url("../images/catalog-background-1.jpg");
     background-repeat: no-repeat;
     
+}
+.catalog-filter{
+    display: flex;
 }
 .catalog-group{
     font-family: "PT Sans";
@@ -440,8 +447,13 @@ html{
 
 
 }
+.button{
+    display: flex;
+}
 .sorting-block{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 1057px;
     margin: 0 auto;
 }
@@ -453,6 +465,8 @@ html{
 }
 .product-list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 1056px;
 }
 .product-card-link{
@@ -469,6 +483,11 @@ html{
     color:#000000;
     text-decoration: none; 
 
+}
+.product-card > div:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .object{
     font-family: "PT Sans";
@@ -526,6 +545,11 @@ html{
     text-transform: uppercase;
 
 }
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .top {
     font-family: "PT Sans";
     font-style: normal;
@@ -540,7 +564,8 @@ html{
 .button-2{
     width: 620px;
     margin: 0 auto;
-    margin-right: 290px ;
+    display: flex;
+    justify-content:center;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
