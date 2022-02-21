@@ -77,31 +77,40 @@ html{
 .main-container{
     flex-grow: 1;
 }
+
 .main-index {
     color: #000000;
     background-color:#FFFFFF;
-    background-image: url("../images/index-background-2.jpg");
+    
     background-size: 100% auto;
-    background-repeat: no-repeat;
+   
 }
 .page-container{
+    background-image: url("../images/index-background-2.jpg");
+    background-repeat: no-repeat;
     width: 1060px;
     margin: 0 auto;
 }
+
+
 .image{
     display: block;
     margin: 0 auto; 
 }
 .advantage {
-    font:"PT Sans";
+    font-family:"PT Sans";
     font-weight :700;
-    font-style :bold;
+    font-style :normal;
     font-size: 30px;
     line-height: 36px;
     text-align:Center;
     background-color:#FFFFFF;
 }
+
+
+
 .inskription {
+    
     font-family: "PT Sans";
     font-style: normal;
     font-size: 30px;
@@ -139,10 +148,17 @@ html{
     padding: 0;
     text-align: center;
     
-}.enumeration{
+}
+.list1{
     
     display:flex;
     
+}
+.list2{
+    
+    display:flex;
+   
+
 }
 .advantage-item{
     display: flex;
@@ -169,6 +185,7 @@ html{
 
 
 .hotel{
+    
     width: 800px;
     
 }
@@ -188,6 +205,7 @@ html{
     font-family: "PT Sans";
     font-style: normal;
     font-size: 18px;
+    text-align: center;
     color: #333333;
     background-color: #FFFFFF;
 }
@@ -457,6 +475,9 @@ html{
 .button{
     display: flex;
 }
+.sorting {
+    display: flex;
+}
 
 .sorting-block{
     display: flex;
@@ -586,8 +607,7 @@ html{
 }
 .pagination{
     display: flex;
-    
-    width: 1056px;
+    flex-grow: 1;
     margin-left: 72px;
     margin-right: 72px;
 }
@@ -614,6 +634,12 @@ html{
 .page-numbering{
     display: flex;
 }
+.page-numbering div{
+    width: 386px; 
+    display: flex; 
+    justify-content: space-between;
+}
+
 .number{
     font-family: "PT Sans";
     font-style: normal;
