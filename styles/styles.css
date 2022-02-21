@@ -34,7 +34,7 @@ html{
 }
 .main-header >.navigation {
     display: flex;
-    
+    align-items: center;
     width: 1060px;
     margin: 0 auto;
 }
@@ -160,7 +160,7 @@ html{
 }
 .advantage-item{
     display: flex;
-    width: 400px;
+   
 }
 .advantage-item:nth-child(n+2):nth-child(-n+4) .advantage-diskription{
     color:  #333333;
