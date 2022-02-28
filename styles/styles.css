@@ -389,7 +389,7 @@ html{
     background: #F2F2F2;
 }
 .appointment-form{
-    
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -498,8 +498,7 @@ html{
 }
 .tel{
     
-    padding-left: 61px;
-    padding-right: 59px;
+    
     width: 720px;
     margin: 0 auto;
     font-family: "PT Sans";
