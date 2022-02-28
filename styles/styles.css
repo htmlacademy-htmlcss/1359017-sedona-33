@@ -174,11 +174,13 @@ html{
 .list1{
    
     display:flex;
+    padding:0;
     
 }
 .list2{
     
     display:flex;
+    padding:0;
    
 
 }
@@ -372,16 +374,24 @@ html{
 }
 
 .appointment-form input{
-    width: 600px;
-    border: 0;
-    height: 60px;
+    margin:0;
     padding: 0;
+    border: 0;
+    width: 600px;
+    
+    height: 60px;
+   
     margin-bottom:94px;
     font-family: "PT Sans"; 
     font-size: 18px;
     line-height: 26px;
     color: #000000; 
     background: #F2F2F2;
+}
+.appointment-form{
+    
+    justify-content: center;
+    align-items: center;
 }
 .filter input{
    font-family:  "PT Sans"; 
@@ -399,6 +409,12 @@ html{
     color:#FFFFFF
 }
 .button-1 {
+    margin:0;
+    padding:0;
+    border:0;
+    margin-bottom: 94px;
+   width: 200px;
+   height: 60px;
    
     font-family: "PT Sans";
     font-weight: 700;
@@ -444,19 +460,24 @@ html{
 
 }
 .social-media{
+
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    align-items: center;
 
 }
 
 .social-media-list {
    
     display: flex;
-    height: 18px;
-    width: 107px;
     margin: 0;
     padding: 0;
+
+    padding-left: 72px;
+    height: 18px;
+    width: 107px;
+   
     list-style-type: none;
     background-color:#FFFFFF
 
@@ -471,12 +492,12 @@ html{
     padding-bottom:44px;
     padding-left:53px;
 }
-.button{
+.button-social{
     padding-top:49px;
     
 }
 .tel{
-    padding-top:42px;
+    
     padding-left: 61px;
     padding-right: 59px;
     width: 720px;
