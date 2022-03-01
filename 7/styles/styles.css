@@ -105,7 +105,7 @@ html{
 }
 .page-container{
     
-    width: 1060px;
+    width: 1200px;
     margin: 0 auto;
 }
 .visually-hidden {
@@ -559,10 +559,10 @@ html{
     display: flex;
 }
 .catalog-group1 {
-   margin:0;
-  
-   
-   border:none;
+    margin:0;
+    padding:0;
+    padding-left:71px;
+    border:none;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -577,8 +577,8 @@ html{
 .catalog-group2 {
     margin:0;
     padding:0;
-   
-   border:none;
+    padding-left:67px;
+    border:none;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -597,7 +597,10 @@ html{
     text-align: left;
     list-style-type: none;
 }
-.filter-interval {
+.filter-interval{
+    padding-left:167px;
+}
+.filter-interval-price {
     margin: 0;
     padding: 0;
     padding-bottom: 34px;
@@ -687,7 +690,7 @@ html{
 .select-control{
     margin:0;
     padding:0;
-    padding-top:63px;
+    margin-top:33px;
     width: 160px;
     font-family: "PT Sans"; 
     font-size: 18px;
@@ -695,6 +698,7 @@ html{
     color: #333333;
 }
 .product-list{
+    margin:0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -845,11 +849,15 @@ padding-left:20px;
     background-color: #83B3D3;
     text-transform: uppercase;
 }
+.line{
+    margin:0;
+}
 .pagination{
     padding: 0;
      margin: 0;
-    
-    display: flex;
+     padding-left: 72px;
+     padding-top:30px;
+     display: flex;
     flex-grow: 1;
      
      list-style-type: none;
@@ -880,8 +888,7 @@ margin-right: 8px;
 .page-numbering{
     margin: 0;
     padding: 0;
-    margin-top: 60px;
-    margin-bottom:73px ;
+   
     display: flex;
     width: 1056px;
     height: 55px;
@@ -896,7 +903,7 @@ margin-right: 8px;
 .number{
     margin:0;
     padding:0;
-    
+    padding-top:46px;
     padding-right:51px;
     padding-bottom: 89px;
    
