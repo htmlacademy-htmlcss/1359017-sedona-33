@@ -577,7 +577,7 @@ html{
 .catalog-group2 {
     margin:0;
     padding:0;
-   
+    
    border:none;
     font-family: "PT Sans";
     font-style: normal;
@@ -597,7 +597,10 @@ html{
     text-align: left;
     list-style-type: none;
 }
-.filter-interval {
+.filter-interval{
+    padding-left:193px;
+}
+.filter-interval-price {
     margin: 0;
     padding: 0;
     padding-bottom: 34px;
