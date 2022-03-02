@@ -31,7 +31,7 @@ body {
 }
 .logo{
     width: 139px;
-    margin-right: 30px;
+    margin-right: 47px;
 }
 .main-header >.navigation {
     display: flex;
@@ -79,6 +79,8 @@ body {
     text-transform: uppercase;
 }
 .navigation-user .navigation-item:last-child .navigation {
+    padding-top: 9px;
+    padding-bottom: 8px;
     font-size:16px; 
     line-height: 20px; 
     color: #FFFFFF;
@@ -228,6 +230,10 @@ body {
     color:#FFFFFF;
     background-color: #83B3D3;
 }
+.list2 .advantage-diskription{
+    margin: 0;
+     padding-bottom: 30px;
+}
 
 
 .hotel{
@@ -312,7 +318,7 @@ body {
    color:#FFFFFF;
 }
 .advantage-diskription{
-   
+   margin:0;
     padding-right: 75px;
     padding-left: 75px;
     padding-bottom: 79px;
@@ -366,8 +372,13 @@ body {
     color: #333333;
 }
 .search-hotel-button {
-   
-  margin-bottom:93px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 93px;
+    display: block;
+    width: 575px;
     font-family: "PT Sans";
     font-weight: 700;
     font-style :normal;
@@ -386,6 +397,9 @@ body {
     text-align: center; 
     background-image: url(../images/background.jpg);
     
+}
+.social-item:first-child{
+    padding-left: 0; 
 }
 
 .appointment-form input{
@@ -550,6 +564,9 @@ body {
 }
 .breadcrumbs{
     margin:0;
+    padding-top:5px;
+    padding-bottom:45px;
+    padding-left:73px;
     display: flex;
     font-family: "PT Sans";
     font-weight: 400;
@@ -563,12 +580,16 @@ body {
 
 }
 .breadcrumbs-item-home{
-    padding-right: 26px;
-    padding-bottom: 53px;
+    padding-top:3px;
+    padding-right: 10px;
+    padding-bottom:6px;
 }
-.breadcrumbs-item{
-    padding-bottom: 45px;
+.image-arrow{
+    padding-top:6px;
+    padding-right:10px;
+    padding-bottom:7px;
 }
+
 
 .catalog{
     background-image: url("../images/catalog-background-1.jpg");
@@ -577,6 +598,17 @@ body {
 }
 .catalog-filter{
     display: flex;
+}
+.infrastructure{
+    margin:0;
+    padding:0;
+    padding-bottom:30px;
+}
+.type-of-housing{
+    margin:0;
+    padding:0;
+    padding-bottom:30px;
+
 }
 .catalog-group1 {
     margin:0;
@@ -605,6 +637,12 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-align: left;
+}
+.catalog-item{
+    padding-bottom:13px;
+}
+.catalog-list:last-child{
+    padding-bottom:83px;
 }
 .catalog-list{
     margin: 0;
