@@ -15,7 +15,7 @@ font-display: swap;
 html{
     height: 100%;
 }
-.body {
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,17 +24,17 @@ html{
     font-size: 18px;
     line-height: 21px;  
 }
+
 .main-headr {
     color: #000000;
     background-color:#E5E5E5 ;
 }
 .logo{
     width: 139px;
-    margin-right: 30px;
+    margin-right: 47px;
 }
 .main-header >.navigation {
     display: flex;
-    align-items: center;
     width: 1060px;
     margin: 0 auto;
 }
@@ -50,16 +50,31 @@ html{
     background-color: #FFFFFF;
     text-decoration: none;
 } 
+.navigation-logo{
+    display: block;
+    height: 70px;   
+}
 .navigation-list{
     
     display: flex;
+    flex-wrap: wrap;
     width: 350px;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+}
+.navigation-item{
+    padding-right: 34px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
 
 .navigation-user{
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
+    flex-wrap: wrap;
     max-width:270px;
     margin-left: auto;
     font-size: 16px; 
@@ -68,6 +83,8 @@ html{
     text-transform: uppercase;
 }
 .navigation-user .navigation-item:last-child .navigation {
+    padding-top: 9px;
+    padding-bottom: 8px;
     font-size:16px; 
     line-height: 20px; 
     color: #FFFFFF;
@@ -76,9 +93,11 @@ html{
 }
 .main-container{
     flex-grow: 1;
+  
 }
 
 .main-index {
+  
     color: #000000;
     background-color:#FFFFFF;
     
@@ -86,15 +105,30 @@ html{
    
 }
 .welcome{
+    padding-top: 70px;
+    padding-bottom: 63px;
+   
     background-image: url("../images/index-background-2.jpg");
     background-repeat: no-repeat;
-
+    margin-bottom: 63px;
 }
 .page-container{
-    
-    width: 1060px;
     margin: 0 auto;
+    margin-top: -5px;
+    width: 1200px;
+    
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
 
 
 .image{
@@ -114,7 +148,8 @@ html{
 
 
 .inskription {
-    
+    width: 720px; 
+    margin: auto;
     font-family: "PT Sans";
     font-style: normal;
     font-size: 30px;
@@ -123,16 +158,18 @@ html{
     text-transform: uppercase;
 }
 .reasons {
+    margin-bottom: 0;
+    margin-top:31px;
+    padding-bottom: 80px;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     text-align: center;
     color: #333333;
+    
 }
-.real-town{
-    display: flex;
-}
+
 .advantage-list {
     margin: 0;
     padding: 0;
@@ -144,17 +181,24 @@ html{
    font-size:24px;
    line-height: 28px;
    text-align:Center;
+   list-style-type: none;
 }
 
 
 .list1{
-    
+   
     display:flex;
+    padding:0;
     
+}
+.list1 .advantage-title {
+    padding-top: 23px; 
+    padding-bottom: 20px;
 }
 .list2{
     
     display:flex;
+    padding:0;
    
 
 }
@@ -162,10 +206,21 @@ html{
     display: flex;
    
 }
+.list1 .advantage-item:first-child p{
+    width: 179px;
+    margin: auto;
+}
 .advantage-item:nth-child(n+2):nth-child(-n+4) .advantage-diskription{
     color:  #333333;
  }
 .advantage-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 172px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 97px;
+    padding-bottom: 30px;
     font-family: "PT Sans";
     font-weight: 700;
     font-style: normal;
@@ -176,23 +231,37 @@ html{
 }
 .diskription-1 {
     width: 400px;
-    
+    height: 384px;
     color:#FFFFFF;
     background-color: #83B3D3;
+}
+.list2 .advantage-diskription{
+    margin: 0;
+     padding-bottom: 30px;
 }
 
 
 .hotel{
-    
+   
     width: 800px;
     
+}
+.image-housing{
+    padding-top: 89px;
+    padding-right: 162px;
+    padding-left: 162px;
+}
+.image-food{
+    padding-top: 91px;
+    padding-right: 163px;
+    padding-left: 163px;
 }
 .diskription-2 {
     width: 400px;
     font-family: "PT Sans";
     font-style: normal;
     font-size: 18px;
-    line-height: 21;
+    line-height: 21px;
     text-align: center;
     color: #333333;
     background-color: rgba(131, 179, 211, 0.12);
@@ -221,19 +290,30 @@ html{
 .image-bridge{
     width: 800px;
 }
-
-
-.advantage-diskription {
+.advantages-diskription1{
+    margin:0;
     font-family: "PT Sans";
     font-weight: 400;
     font-style :normal;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color: #333333;
-   
+   color:#FFFFFF;
+   width:250px;
+   padding-left:75px;
+   padding-right:75px;
+   padding-bottom: 30px;
+
 }
+
+
+
 .advantages-diskription{
+    margin:0;
+    width:220px;
+    padding-left: 90px;
+    padding-right:90px;
+    padding-bottom: 87px;
     font-family: "PT Sans";
     font-weight: 400;
     font-style :normal;
@@ -242,6 +322,25 @@ html{
     text-align: center;
    color:#FFFFFF;
 }
+.advantage-diskription{
+   margin:0;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 79px;
+    font-family: "PT Sans";
+    font-style:normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 400;
+}
+.image-souvenirs{
+    padding-top:85px;
+    padding-right: 168px;
+    padding-left: 168px;
+}
+
+
 
 .search-hotel {
     margin:0 auto;
@@ -250,7 +349,11 @@ html{
     text-align: center; 
 }
 .question {
-   
+    margin:0;
+   padding-top: 91px;
+   padding-right: 240px;
+   padding-bottom: 29px;
+   padding-left:240px;
     font-family: "PT Sans";
     font-weight: 700;
     font-style :normal;
@@ -263,6 +366,8 @@ html{
 }
 
 .date{
+    margin: 0;
+    padding-bottom: 56px;
     font-family: "PT Sans";
     font-weight: 400;
     font-style :normal;
@@ -272,6 +377,13 @@ html{
     color: #333333;
 }
 .search-hotel-button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 93px;
+    display: block;
+    width: 575px;
     font-family: "PT Sans";
     font-weight: 700;
     font-style :normal;
@@ -285,18 +397,33 @@ html{
 }
 .mailing {
     
-    width: 1200;
+    width: 1200px;
     margin: 0 auto;
     text-align: center; 
     background-image: url(../images/background.jpg);
     
 }
+.social-item:first-child{
+    padding-left: 0; 
+}
+
 .appointment-form input{
+    margin:0;
+    padding: 0;
+    border: 0;
+    width: 600px;
+    height: 60px;
     font-family: "PT Sans"; 
     font-size: 18px;
     line-height: 26px;
     color: #000000; 
     background: #F2F2F2;
+}
+.appointment-form{
+    padding-bottom: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .filter input{
    font-family:  "PT Sans"; 
@@ -314,6 +441,13 @@ html{
     color:#FFFFFF
 }
 .button-1 {
+    margin:0;
+    padding:0;
+    border:0;
+    
+   width: 200px;
+   height: 60px;
+   
     font-family: "PT Sans";
     font-weight: 700;
     font-style :normal;
@@ -327,6 +461,9 @@ html{
 
 
 .title {
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 29px;
     font-family: "PT Sans";
     font-weight: 700;
     font-style :normal;
@@ -339,6 +476,12 @@ html{
 
 }
 .no-spam{
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 544px;
+    
+    padding-bottom: 46px;
     font-family: "PT Sans";
     font-weight: 400;
     font-style :normal;
@@ -349,22 +492,42 @@ html{
 
 }
 .social-media{
+
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    align-items: center;
 
 }
 
 .social-media-list {
+   
     display: flex;
-    width: 107px;
     margin: 0;
     padding: 0;
-   
+
+    padding-left: 72px;
+    height: 18px;
+    list-style-type: none;
     background-color:#FFFFFF
 
 }
+.social-item{
+    padding-left: 30px;
+    
+}
+.htmlacademy-link{
+    padding-top: 42px;
+    padding-right:72px;
+    padding-bottom:44px;
+    padding-left:53px;
+}
+.button-social{
+    padding-top:49px;
+    
+}
 .tel{
+     
     width: 720px;
     margin: 0 auto;
     font-family: "PT Sans";
@@ -387,6 +550,16 @@ html{
     
 }
 .inner-title {
+    padding-top: 35px;
+    padding-right: 601px;
+    padding-bottom: 5px;
+    padding-left: 71px;
+    
+    margin:0;
+    
+
+    width:528px;
+    height: 68px;
     font-family: "PT Sans";
     font-weight: 700;
     font-style:normal;
@@ -395,6 +568,10 @@ html{
     text-align: left;
 }
 .breadcrumbs{
+    margin:0;
+    padding-top:5px;
+    
+    padding-left:73px;
     display: flex;
     font-family: "PT Sans";
     font-weight: 400;
@@ -402,8 +579,27 @@ html{
     font-weight: 400;
     line-height: 21px;
     text-align: left;
+    list-style-type: none;
+    padding-left: 73px;
+    
 
 }
+.breadcrumbs-link{
+    padding-bottom:45px;
+    display:block;
+}
+.breadcrumbs-item-home{
+    
+    padding-right: 10px;
+    padding-bottom:6px;
+}
+.image-arrow{
+    padding-top:6px;
+    padding-right:10px;
+    padding-bottom:7px;
+}
+
+
 .catalog{
     background-image: url("../images/catalog-background-1.jpg");
     background-repeat: no-repeat;
@@ -412,7 +608,22 @@ html{
 .catalog-filter{
     display: flex;
 }
-.catalog-group {
+.infrastructure{
+    margin:0;
+    padding:0;
+    padding-bottom:30px;
+}
+.type-of-housing{
+    margin:0;
+    padding:0;
+    padding-bottom:30px;
+
+}
+.catalog-group1 {
+    margin:0;
+    padding:0;
+    padding-left:71px;
+    border:none;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -420,15 +631,50 @@ html{
     line-height: 26px;
     text-align: left;
 }
+.filter input{
+    margin:0;
+}
+.sorting-block .select-control, .sorting-block .sorting{
+    margin-top: -6px;
+}
+
+.catalog-group2 {
+    margin:0;
+    padding:0;
+    padding-left:67px;
+    border:none;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+}
+.catalog-item{
+    padding-bottom:13px;
+}
+.catalog-list:last-child{
+    padding-bottom:26px;
+}
 .catalog-list{
+    margin: 0;
+    padding:0;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px; 
     text-align: left;
+    list-style-type: none;
 }
-.filter-interval {
+.filter-interval{
+    padding-left:167px;
+}
+.filter-interval-price {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 34px;
+    
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -436,7 +682,19 @@ html{
     line-height: 26px; 
     text-align: left;
 }
+.filter-border{
+    display:flex;
+   
+}
 .button-blue{
+    margin-top: 34px;
+    margin-right: 72px;
+    margin-bottom: 20px;
+    margin-left: 81px;
+    width: 160px;
+    height: 48px;
+    border: 0;
+
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -448,6 +706,10 @@ html{
     text-transform: uppercase;
 }
 .button-usual {
+    margin-right: 72px;
+    margin-bottom: 83px;
+    margin-left: 81px;
+
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
@@ -459,6 +721,12 @@ html{
 
 }
 .title-catalog{
+    margin:0;
+    padding:0;
+    padding-top: 50px;
+    padding-right: 192px;
+    padding-bottom: 56px;
+    padding-left: 0;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -470,36 +738,81 @@ html{
 
 
 }
-.button{
+.button1{
     display: flex;
     flex-direction: column;
 }
+.button{
+    padding:0;
+    display: flex;
+}
+.button-vector
+{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: 8px;
+}
+.filter-border input{
+    height: 48px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+.filter-border input:first-child{
+    border-right: 0;
+}
 
 .sorting-block{
+    margin: 0 auto ;
+    padding:0;
    
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1057px;
-    margin: 0 auto;
+    
 }
 .select-control{
+    margin:0;
+    padding:0;
+    margin-top:33px;
+    padding-right: 81px ;
+    width: 160px;
+    height: 48px;
     font-family: "PT Sans"; 
     font-size: 18px;
     line-height: 23px; 
     color: #333333;
 }
 .product-list{
+    margin:0;
+    padding:0;
+    padding-left:72px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1056px;
 }
+.product-card{
+    margin-right: 18px;
+    padding: 20px;
+}
 .product-card-link{
     text-decoration: none;
 }
+.product-card-image{
+padding-bottom: 16px;
+
+}
+.product-card:nth-child(3) {
+    margin-right: 0;
+}
 
 .product-card-title{
+    margin:0;
+    
+    padding-bottom:16px;
+    
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -516,6 +829,8 @@ html{
     justify-content: space-between;
 }
 .object{
+    margin:0;
+    
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
@@ -527,6 +842,10 @@ html{
 
 }
 .product-card-price{
+    
+    padding-left: 25px;
+    width: 143px;
+    height: 23px;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
@@ -537,6 +856,10 @@ html{
 
 }
 .product-card-button-button{
+    margin-top:16px;
+    margin-right: 26px;
+    padding-top: 9px;
+    padding-bottom: 10px;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -549,6 +872,10 @@ html{
     
 }
 .product-card-button-button-blue{
+    padding-top: 9px;
+    padding-bottom: 10px;
+    margin-top:16px;
+    margin-right:20px;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -560,6 +887,8 @@ html{
     text-transform: uppercase;
 }
 .product-card-button-button-green{
+    margin-top:16px;
+    margin-right:20px;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -571,12 +900,24 @@ html{
     text-transform: uppercase;
 
 }
+.star-vector{
+    padding-top:26px;
+    
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
 .rating{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .top {
+    margin:0;
+    margin-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    margin-top: 16px;   
+    
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
@@ -588,8 +929,16 @@ html{
     background-color: #F2F2F2;;
 }
 .button-2{
-    width: 620px;
     margin: 0 auto;
+    padding:0;
+    border:0;
+    margin-top:30px;
+    margin-right:290px;
+    margin-left: 290px;
+    margin-bottom: 30px;
+    width: 620px;
+    height: 60px;
+    align-items: center;    
     display: flex;
     justify-content:center;
     font-family: "PT Sans";
@@ -602,13 +951,26 @@ html{
     background-color: #83B3D3;
     text-transform: uppercase;
 }
+.line{
+    margin:0;
+}
 .pagination{
-    display: flex;
+    padding: 0;
+     margin: 0;
+     padding-left: 72px;
+     padding-top:30px;
+     display: flex;
     flex-grow: 1;
-    margin-left: 72px;
-    margin-right: 72px;
+     
+     list-style-type: none;
 }
 .pagination-link-pagination-current{
+    margin-right: 8px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -618,7 +980,16 @@ html{
     color: #000000;
     background-color: #F2F2F2;
 }
+
+
+
 .pagination-link{
+    margin-right: 8px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -629,15 +1000,30 @@ html{
     background-color: #83B3D3;
 }
 .page-numbering{
+    margin: 0;
+    padding: 0;
+   
     display: flex;
+    width: 1056px;
+    
+   
 }
 .page-numbering div{
     width: 386px; 
     display: flex; 
     justify-content: space-between;
 }
+.line:first-of-type{
+    margin-top: 34px;
+}
 
 .number{
+    margin:0;
+    padding:0;
+    padding-top:46px;
+    padding-right:51px;
+    
+   
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
@@ -651,10 +1037,15 @@ html{
     align-items: center;
 }
 .main-inner .title {
+    padding-top: 73px; 
+    padding-bottom: 46px;
     color: #000000;
 }
 .main-inner .no-spam {
     color: #333333;
+}
+.main-inner .appointment-form{
+    padding-bottom: 141px;
 }
 
 .main-inner .mailing{
