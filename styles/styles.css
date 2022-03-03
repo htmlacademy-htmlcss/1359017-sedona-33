@@ -50,6 +50,10 @@ body {
     background-color: #FFFFFF;
     text-decoration: none;
 } 
+.navigation-logo{
+    display: block;
+    height: 70px;   
+}
 .navigation-list{
     
     display: flex;
@@ -774,6 +778,7 @@ body {
     margin-top:33px;
     padding-right: 81px ;
     width: 160px;
+    height: 48px;
     font-family: "PT Sans"; 
     font-size: 18px;
     line-height: 23px; 
@@ -960,6 +965,7 @@ padding-bottom: 16px;
      list-style-type: none;
 }
 .pagination-link-pagination-current{
+    margin-right: 8px;
     width: 55px;
     height: 55px;
     display: flex;
@@ -974,15 +980,16 @@ padding-bottom: 16px;
     color: #000000;
     background-color: #F2F2F2;
 }
-.pagination-item{
+
+
+
+.pagination-link{
     margin-right: 8px;
     width: 55px;
     height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.pagination-link{
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -998,7 +1005,7 @@ padding-bottom: 16px;
    
     display: flex;
     width: 1056px;
-    height: 55px;
+    
    
 }
 .page-numbering div{
@@ -1015,7 +1022,7 @@ padding-bottom: 16px;
     padding:0;
     padding-top:46px;
     padding-right:51px;
-    padding-bottom: 89px;
+    
    
     font-family: "PT Sans";
     font-style: normal;
