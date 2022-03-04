@@ -787,23 +787,24 @@ body {
 .product-list{
     margin:0;
     padding:0;
-    padding-left:72px;
-   display: grid;
-   grid-template-columns: repeat(3,340px);
-    row-gap: 18px;
-    column-gap: 10px;
-    width: 1056px;
+    margin-bottom: 34px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px 16px
+   
 }
 .product-card{
-    margin-right: 18px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:16px 26px;
+    padding:20px
+    
 }
 .product-card-link{
     text-decoration: none;
 }
 .product-card-image{
 padding-bottom: 16px;
-
 }
 .product-card:nth-child(3) {
     margin-right: 0;
