@@ -788,9 +788,10 @@ body {
     margin:0;
     padding:0;
     padding-left:72px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(3,340px);
+    row-gap: 18px;
+    column-gap: 10px;
     width: 1056px;
 }
 .product-card{
