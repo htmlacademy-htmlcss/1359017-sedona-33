@@ -792,15 +792,13 @@ body {
     display: grid;
     width: 1056px;
     grid-template-columns: repeat(3,1fr);
-    gap:10px 16px
+    gap:10px 18px
    
 }
 .product-card{
     display: grid;
     grid-template-columns: 140px 160px;
-    
-    gap:16px 26px;
-    padding:20px
+     padding:20px
     
 }
 .product-card-link{
@@ -889,14 +887,14 @@ padding-bottom: 16px;
     color:white;
     background-color:#756257;
     text-transform: uppercase;
-    
+    text-decoration: none;
 }
 .product-card-button-button-blue{
     grid-row:3;
     padding-top: 9px;
     padding-bottom: 10px;
     margin-top:16px;
-    margin-right:20px;
+    text-decoration: none;
     width: 140px;
     margin-left: auto;
     font-family: "PT Sans";
@@ -913,6 +911,10 @@ padding-bottom: 16px;
     grid-column: 2/4;
     margin-top:16px;
     margin-right:20px;
+    padding-top:9px ;
+    width: 140px;
+    margin-left: 20px;
+
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -922,7 +924,7 @@ padding-bottom: 16px;
     color:white;
     background-color: #7DB54F;
     text-transform: uppercase;
-
+    text-decoration: none;
 }
 .star-vector{
     display: flex; 
