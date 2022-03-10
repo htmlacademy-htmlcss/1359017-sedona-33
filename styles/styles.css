@@ -63,16 +63,25 @@ body {
     padding: 0;
     list-style-type: none;
 }
+.navigation link:hover{
+    color:#756257;  
+}
+.navigation link:active{
+    outline:2px solid #756257
+}
 .navigation-item{
     padding-right: 34px;
     padding-top: 20px;
     padding-bottom: 20px;
     
 }
+.navigation-list .navigation-item:first-child:hover{
+   fill: #756257;
+}
 
 .navigation-user{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding:0;
     display: flex;
     flex-wrap: wrap;
     max-width:270px;
@@ -81,15 +90,50 @@ body {
     line-height: 20px; 
     color: #FFFFFF; 
     text-transform: uppercase;
+    list-style-type: none;
 }
+.navigation-user .navigation link{
+    min-height: 20px;
+    min-width: 24px;
+
+}
+.navigation-user .navigation-item:first-child{
+    padding-right: 23px;
+}
+.navigation-user .navigation-item{
+    padding:0;
+    padding-top:24px;
+    padding-bottom:24px;
+}
+
+
+
 .navigation-user .navigation-item:last-child .navigation {
+    margin-top:13px;
+    margin-left: 32px;
+    margin-bottom: 14px;
     padding-top: 9px;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-bottom: 8px;
     font-size:16px; 
     line-height: 20px; 
     color: #FFFFFF;
      text-transform: uppercase; 
      background: #756257;
+}
+.navigation-user .navigation-item:last-child .navigation:hover{
+    background-color: #615048;
+}
+.navigation-user .navigation-item:last-child .navigation:focus{
+    stroke: solid #83B3D3;
+}
+.navigation-user .navigation-item:last-child .navigation:active{
+   color: #615048;
+   opacity: 30%;
+}
+.navigation-link:hover .search.favorite{
+  fill:  #756257 ;
 }
 .main-container{
     flex-grow: 1;
@@ -395,6 +439,18 @@ body {
     text-transform: uppercase;
     text-decoration: none;   
 }
+.search-hotel-button:hover{
+    background-color: #615048;
+}
+.search-hotel-button:focus{
+   background-color: #615048;
+   outline:3px solid #83B3D3;
+}
+.search-hotel-button:active{
+    fill: solid #615048;
+    opacity: 30%;
+
+}
 .mailing {
     
     width: 1200px;
@@ -419,6 +475,14 @@ body {
     color: #000000; 
     background: #F2F2F2;
 }
+.appointment-form input:hover{
+    background-color: #E6E6E6;
+}
+.appointment-form input:focus{
+   background-color: #E6E6E6;
+   outline:3px solid #83B3D3;
+}
+
 .appointment-form{
     padding-bottom: 94px;
     display: flex;
@@ -444,10 +508,8 @@ body {
     margin:0;
     padding:0;
     border:0;
-    
-   width: 200px;
-   height: 60px;
-   
+    width: 200px;
+    height: 60px;
     font-family: "PT Sans";
     font-weight: 700;
     font-style :normal;
@@ -456,8 +518,19 @@ body {
     color: #FFFFFF;
     background-color:#83B3D3;
     text-transform: uppercase;
-
 }
+.button-1:hover{
+    background-color: #68A2CA;
+}
+.button-1:focus{
+    background-color: #68A2CA; 
+    outline: 3px solid #756257;
+}
+.button-1:active{
+    background-color: #68A2CA; 
+    opacity: 30%;
+}
+
 
 
 .title {
@@ -512,6 +585,19 @@ body {
     background-color:#FFFFFF
 
 }
+.image-vector:hover{
+    background-color: #68A2CA;
+}
+.image-vector:focus{
+    background-color:#E5E5E5;
+    outline: 3px solid #83B3D3;
+
+}
+.image-vector:active{
+    background-color:#68A2CA;
+    opacity: 30%;
+}
+
 .social-item{
     padding-left: 30px;
     
@@ -521,6 +607,18 @@ body {
     padding-right:72px;
     padding-bottom:44px;
     padding-left:53px;
+}
+.htmlacademy-link:hover{
+    color:#756257;
+
+}
+.htmlacademy-link:focus{
+   color: #756257;
+   outline: 3px solid #83B3D3;
+}
+.htmlacademy-link:active{
+   color:  #756257;
+   opacity: 30%;
 }
 .button-social{
     padding-top:49px;
@@ -538,6 +636,18 @@ body {
     color: #000000;
     text-decoration: none;
    
+}
+.tel:hover{
+   color: #756257;
+}
+.tel:focus{
+    color: #756257;
+    border: 3px solid #83B3D3;
+
+}
+.tel:active{
+    color: #756257; 
+    opacity: 30%; 
 }
 .main-inner{ 
     font-family:"PT Sans";
