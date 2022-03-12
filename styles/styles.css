@@ -708,6 +708,14 @@ body {
     padding-right:10px;
     padding-bottom:7px;
 }
+.breadcrumbs:hover{
+    opacity: 60%;
+}
+.breadcrumbs:focus/не поняла как сделать/
+
+.breadcrumbs:active{
+opacity: 30%;
+}
 
 
 .catalog{
@@ -1043,7 +1051,7 @@ padding-bottom: 16px;
     padding-bottom: 10px;
     
     width: 91px;
-    justify-content: space-around;
+    
 }
 .rating{
     display: grid;
