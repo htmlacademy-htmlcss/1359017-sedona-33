@@ -113,9 +113,14 @@ body {
     padding-bottom:24px;
 }
 
-.navigation .link svg{
+svg.navigation-icon:hover path{
   fill:  #756257;
 }
+svg.navigation-icon:active path{
+    fill:  #756257;
+    opacity: 30%;
+}
+
 
 .navigation-user .navigation-item:last-child .navigation {
     margin-top:13px;
@@ -491,6 +496,12 @@ body {
    background-color: #E6E6E6;
    outline:3px solid #83B3D3;
 }
+.appointment-form input:invalid{
+    border: 2px solid #FF5757;
+}
+  
+
+
 
 .appointment-form{
     padding-bottom: 94px;
