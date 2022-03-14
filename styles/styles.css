@@ -668,7 +668,7 @@ svg.navigation-icon:active path{
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    align-items: center;
+    align-content: center;
 
 }
 
@@ -677,6 +677,7 @@ svg.navigation-icon:active path{
     display: flex;
     margin: 0;
     padding: 0;
+    margin-top: 49px;
 
     padding-left: 72px;
     height: 18px;
@@ -690,33 +691,39 @@ svg.navigation-icon:active path{
     padding-left: 30px;
     
 }
+svg.image-vector{
+    fill: #83B3D3
+
+}
 svg.image-vector:hover path{
-    fill:#68A2CA;
+   fill: #68A2CA;
+}
+svg.image-vector:focus path{
+   fill: #83B3D3 ;
+    
 }
 svg.image-vector:focus{
-    fill: rgba(104, 162, 202, 1);
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    outline-color: rgba(131, 179, 211, 1);
+    
 
 }
+ 
 
-.htmlacademy-link{
-    padding-top: 42px;
-    padding-right:72px;
-    padding-bottom:44px;
-    padding-left:53px;
+svg.htmlacademy-link{
+    margin-top: 42px;
+    margin-right:72px;
+    margin-bottom:44px;
+    
 }
 .htmlacademy-link:hover path{
     fill:#756257;
 
 }
-.htmlacademy-link:focus {
+.svg.htmlacademy-link:focus ::before{
    fill: #756257;
-   outline: 3px solid #83B3D3;
+   position: absolute;
+   border: 3px solid #83B3D3;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 .htmlacademy-link:active path{
    fill:  #756257;
@@ -727,9 +734,12 @@ svg.image-vector:focus{
     
 }
 .tel{
-     
+    margin: 0;
+    margin-top:40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
     width: 720px;
-    margin: 0 auto;
+    height: 40px;
     font-family: "PT Sans";
     font-style: normal;
     font-size: 40px;
@@ -742,14 +752,13 @@ svg.image-vector:focus{
 .tel:hover{
    color: #756257;
 }
-.tel:focus{
+.tel:focus::before{
     color: #756257;
     outline: none;
     border: 3px solid #83B3D3;
     box-sizing: border-box;
     border-radius: 10px;
     width: 361px;
-    
 }
 
 .tel:active{
@@ -862,14 +871,7 @@ opacity: 30%;
 .sorting-block .select-control, .sorting-block .sorting{
     margin-top: -6px;
 }
-.control-input{
-    position: relative;
-}
-.checkbox::before{
-    position: absolute;
-    background-color: #FFFFFF;
-content: "";
-}
+
 
 .catalog-group2 {
     margin:0;
