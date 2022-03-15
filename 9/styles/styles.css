@@ -701,24 +701,22 @@ svg.image-vector{
     position: relative;
 
 }
-svg.image-vector:focus{
-    border: 3px solid #83B3D3;
-box-sizing: border-box;
-border-radius: 10px;
-outline: none;
-width: 40px;
-height: 40px;
-padding-left: 10px;
-padding-top: 10px;
-}
-svg.image-vector::before{
+
+.button-social::before{
     position: absolute;
     outline: 3px solid #83B3D3;
     width: 40px;
     height: 40px;
     content:"";
     border-radius: 10px;
+    display: none;
 
+}
+.button-social:focus-visible{
+    outline:none;
+}
+.button-social:focus-visible::before {
+    display: block;
 }
 svg.image-vector:focus-visible::before {
     display: block;
@@ -726,9 +724,12 @@ svg.image-vector:focus-visible::before {
 svg.image-vector:hover path{
    fill: #68A2CA;
 }
-svg.image-vector:focus path{
-   fill: #83B3D3 ;
+svg.image-vector:focus-visible path{
+   fill:  #68A2CA ;
     
+}
+.image-vector:active{
+    opacity: 0.3;
 }
 
  
@@ -745,16 +746,14 @@ svg.htmlacademy-link{
 }
 .htmlacademy-link:hover path{
     fill:#756257;
-
 }
 svg.htmlacademy-link{
     position: relative;
-
 }
 .htmlacademy-link:focus-visible{
     outline: none;
 }
-svg.htmlacademy-link:focus ::before{
+.htmlacademy-link:focus ::before{
    fill: #756257;
    position: absolute;
    border: 3px solid #83B3D3;
@@ -762,20 +761,16 @@ svg.htmlacademy-link:focus ::before{
     border-radius: 10px;
     width: 160px;
     height: 70px;
+    display: none;
 }
 .htmlacademy-link:active path{
    fill:  #756257;
    opacity: 30%;
 }
-svg.htmlacademy-link:focus{
-    width: 160px;
-    height: 70px;
-    border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
-    outline: none;
-    padding: 10px 10px 10px 10px;
+.htmlacademy-link:focus-visible path{
+    fill:#756257;
 }
+
   
     
 
@@ -810,7 +805,8 @@ svg.htmlacademy-link:focus{
     outline: 3px solid #83B3D3;
     top: -10px;
     left: 182px;
-    display:none
+    display:none;
+    border-radius: 10px;
 
 }
 .tel:focus-visible::before {
@@ -977,7 +973,17 @@ opacity: 30%;
     display:flex;
    
 }
+.range-scale{
+    position: relative;
+    height: 4px;
+    margin-bottom: 94px;
+    margin-top: 32px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+}
 .button-blue{
+    padding: 0;
+    margin: 0;
     margin-top: 34px;
     margin-right: 72px;
     margin-bottom: 20px;
@@ -1001,11 +1007,14 @@ opacity: 30%;
 }
 .button-blue:focus{
     background-color: #68A2CA; 
-    outline: 3px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+    outline: none;
+
 }
 .button-blue:active{
     background-color: #68A2CA;
-    opacity: 30%;
+    color: rgba(255, 255, 255, 0.3);
 }
 .button-usual {
     padding: 0;
