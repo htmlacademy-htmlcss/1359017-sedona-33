@@ -685,6 +685,11 @@ svg.navigation-icon:active path{
     background-color:#FFFFFF
 
 }
+.button-social:focus-visible path{
+    fill: rgba(104, 162, 202, 1);
+
+
+}
 
 
 .social-item{
@@ -692,8 +697,21 @@ svg.navigation-icon:active path{
     
 }
 svg.image-vector{
-    fill: #83B3D3
+    fill: #83B3D3;
+    position: relative;
 
+}
+svg.image-vector::before{
+    position: absolute;
+    outline: 3px solid #83B3D3;
+    width: 40px;
+    height: 40px;
+    content:"";
+    border-radius: 10px;
+
+}
+svg.image-vector:focus-visible::before {
+    display: block;
 }
 svg.image-vector:hover path{
    fill: #68A2CA;
@@ -702,11 +720,7 @@ svg.image-vector:focus path{
    fill: #83B3D3 ;
     
 }
-.button-social:focus-visible path{
-    fill: rgba(104, 162, 202, 1);
 
-
-}
  
 
 svg.htmlacademy-link{
@@ -774,7 +788,7 @@ svg.htmlacademy-link:focus ::before{
     content: "";
     height: 70px;
     position: absolute;
-    outline: solid;
+    outline: 3px solid #83B3D3;
     top: -10px;
     left: 182px;
 display:none
