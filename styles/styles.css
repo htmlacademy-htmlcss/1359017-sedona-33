@@ -702,37 +702,50 @@ svg.image-vector:focus path{
    fill: #83B3D3 ;
     
 }
-svg.image-vector:focus{
-    
+.button-social:focus-visible path{
+    fill: rgba(104, 162, 202, 1);
+
 
 }
  
 
 svg.htmlacademy-link{
+    margin: 0;
+    padding: 0;
     margin-top: 42px;
-    margin-right:72px;
-    margin-bottom:44px;
+    margin-bottom: 44px;
+    margin-right: 72px;
+    margin-left: 53px;
+   
     
 }
 .htmlacademy-link:hover path{
     fill:#756257;
 
 }
-.svg.htmlacademy-link:focus ::before{
+svg.htmlacademy-link{
+    position: relative;
+
+}
+.htmlacademy-link:focus-visible{
+    outline: none;
+}
+svg.htmlacademy-link:focus ::before{
    fill: #756257;
    position: absolute;
    border: 3px solid #83B3D3;
     box-sizing: border-box;
     border-radius: 10px;
+    width: 160px;
+    height: 70px;
 }
 .htmlacademy-link:active path{
    fill:  #756257;
    opacity: 30%;
 }
-.button-social{
-    padding-top:49px;
+  
     
-}
+
 .tel{
     margin: 0;
     margin-top:40px;
@@ -747,19 +760,29 @@ svg.htmlacademy-link{
     text-align: center;
     color: #000000;
     text-decoration: none;
+    position: relative;
    
+}
+.tel:focus-visible{
+    outline: none;
 }
 .tel:hover{
    color: #756257;
 }
-.tel:focus::before{
-    color: #756257;
-    outline: none;
-    border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
+.tel:before{
     width: 361px;
+    content: "";
+    height: 70px;
+    position: absolute;
+    outline: solid;
+    top: -10px;
+    left: 182px;
+display:none
+
 }
+.tel:focus-visible::before {
+    display: block;
+}    
 
 .tel:active{
     color: #756257; 
