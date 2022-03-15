@@ -701,6 +701,16 @@ svg.image-vector{
     position: relative;
 
 }
+svg.image-vector:focus{
+    border: 3px solid #83B3D3;
+box-sizing: border-box;
+border-radius: 10px;
+outline: none;
+width: 40px;
+height: 40px;
+padding-left: 10px;
+padding-top: 10px;
+}
 svg.image-vector::before{
     position: absolute;
     outline: 3px solid #83B3D3;
@@ -757,6 +767,15 @@ svg.htmlacademy-link:focus ::before{
    fill:  #756257;
    opacity: 30%;
 }
+svg.htmlacademy-link:focus{
+    width: 160px;
+    height: 70px;
+    border: 3px solid #83B3D3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
+}
   
     
 
@@ -791,7 +810,7 @@ svg.htmlacademy-link:focus ::before{
     outline: 3px solid #83B3D3;
     top: -10px;
     left: 182px;
-display:none
+    display:none
 
 }
 .tel:focus-visible::before {
@@ -1238,10 +1257,13 @@ border-radius: 4px;
 }
 .product-card-button-button:focus{
     background-color: #615048;
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+    outline: none;  
 }
 .product-card-button-button:active{
-    opacity: 30%;
+    background-color: #615048;
+    color: rgba(255, 255, 255, 0.3);
 }
 .product-card-button-button-blue{
     grid-row:3;
@@ -1264,16 +1286,22 @@ border-radius: 4px;
 }
 .product-card-button-button-blue:hover{
    background-color: #68A2CA;
-   outline: 1px solid #756257;
+   border: 1px solid #756257;
+   outline: none;
+   border-radius: 4px;
 }
 .product-card-button-button-blue:focus{
     background-color: #68A2CA;
-    outline: 3px solid #756257;
+    border: 3px solid  #756257;;
+    border-radius: 4px;
+    outline: none; 
 }
 .product-card-button-button-blue:active{
     background-color: #68A2CA;
-    opacity: 30%;
-    outline: 1px solid #756257;
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #756257;
+    outline: none;
+    border-radius: 4px;
 }
 .product-card-button-button-green{
     grid-column: 2/4;
@@ -1300,11 +1328,13 @@ border-radius: 4px;
 }
 .product-card-button-button-green:focus{
     background-color: #6C9E42;
-    outline: 3px solid #756257;
+    border: 3px solid  #756257;;
+    border-radius: 4px;
+    outline: none; 
 
 }
 .product-card-button-button-green:active{
-    opacity: 30%;
+    color: rgba(255, 255, 255, 0.3);
     background-color: #6C9E42;
 }
 .star-vector{
