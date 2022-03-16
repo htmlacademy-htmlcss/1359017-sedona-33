@@ -685,10 +685,30 @@ svg.navigation-icon:active path{
     background-color:#FFFFFF
 
 }
+.button-social{
+    position: relative;
+
+}
+.button-social:focus-visible::before{
+    top: -9px;
+    left: -11px;
+}
 .button-social:focus-visible path{
     fill: rgba(104, 162, 202, 1);
 
 
+}
+.button-social:focus{
+    outline: none;
+
+}
+.button-social:focus::before {
+    display: block;
+    top: -9px;
+    left: -11px;
+}
+.button-social:focus path {
+    fill: rgba(104, 162, 202, 1);
 }
 
 
@@ -704,7 +724,7 @@ svg.image-vector{
 
 .button-social::before{
     position: absolute;
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
     width: 40px;
     height: 40px;
     content:"";
@@ -731,48 +751,72 @@ svg.image-vector:focus-visible path{
 .image-vector:active{
     opacity: 0.3;
 }
+svg.htmlacademy-link{
+    padding:0;
+    margin: 0;
+    margin-top: 42px;
+    margin-right: 72px;
+    margin-bottom: 44px;
+    margin-left: 53px;
 
+}
  
 
-svg.htmlacademy-link{
-    margin: 0;
-    padding: 0;
-    margin-top: 42px;
-    margin-bottom: 44px;
-    margin-right: 72px;
-    margin-left: 53px;
-   
-    
-}
-.htmlacademy-link:hover path{
-    fill:#756257;
-}
-svg.htmlacademy-link{
+.htmlacademy-link{
     position: relative;
+}
+.htmlacademy-link:focus-visible::before{
+    left: 15px;
+    top: 15px;
+}
+.htmlacademy-link:focus-visible path{
+    fill: rgba(104, 162, 202, 1);
+}
+.htmlacademy-link:focus{
+    outline: none;
+}
+.htmlacademy-link:focus::before{
+    display: block;
+    left: 15px;
+    top: 15px;
+
+}
+.htmlacademy-link:focus path{
+    fill:#756257
+}
+.htmlacademy-link::before{
+    position:absolute;
+    border: 3px solid #83B3D3;
+    width:160px;
+    height:70px;
+    content:"";
+    border-radius: 10px;
+    display: none;
+
 }
 .htmlacademy-link:focus-visible{
     outline: none;
 }
-.htmlacademy-link:focus ::before{
-   fill: #756257;
-   position: absolute;
-   border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 160px;
-    height: 70px;
-    display: none;
+.htmlacademy-link:focus-visible::before{
+    display: block;
 }
-.htmlacademy-link:active path{
-   fill:  #756257;
-   opacity: 30%;
+svg.htmlacademy-link{
+    fill:#756257;
+    position:relative;
 }
-.htmlacademy-link:focus-visible path{
+svg.htmlacademy-link:focus-visible::before{
+    display: block;
+}
+svg.htmlacademy-link:hover path{
     fill:#756257;
 }
-
-  
-    
+svg.htmlacademy-link:focus-visible path{
+    fill:#756257;
+}
+.htmlacademy-link:active{
+    color: #756257;
+    opacity: 30%;
+}
 
 .tel{
     margin: 0;
@@ -957,10 +1001,17 @@ opacity: 30%;
 .filter-interval{
     padding-left:167px;
 }
+.price-setting{
+    
+    margin:0;
+    padding: 0;
+    border:none;
+  
+}
 .filter-interval-price {
     margin: 0;
     padding: 0;
-    padding-bottom: 34px;
+    
     
     font-family: "PT Sans";
     font-style: normal;
@@ -973,14 +1024,52 @@ opacity: 30%;
     display:flex;
    
 }
+.range{
+    margin:0;
+    padding:0;
+}
 .range-scale{
     position: relative;
     height: 4px;
     margin-bottom: 94px;
     margin-top: 32px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(216, 107, 5);
 }
+.range-bar{
+    position: absolute;
+    height: 4px;
+    background-color: #FFFFFF;
+    margin-bottom: 94px;
+    right: 60px;
+    width: 227px;
+}
+    
+
+.range-toggle{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.toggle-min {
+    padding:0;
+    margin:0;
+    top:-6px;
+    left:-12px;
+  }
+  
+  .toggle-max {
+   padding:0;
+   margin:0;
+   left:220px;
+   top:-6px;
+   
+  }
+  
+
 .button-blue{
     padding: 0;
     margin: 0;
