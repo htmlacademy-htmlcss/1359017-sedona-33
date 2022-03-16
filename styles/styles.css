@@ -717,7 +717,7 @@ svg.navigation-icon:active path{
     padding-left: 30px;
     
 }
-svg.image-vector{
+svg.image-vector1{
     fill: #83B3D3;
     position: relative;
 
@@ -739,17 +739,17 @@ svg.image-vector{
 .button-social:focus-visible::before {
     display: block;
 }
-svg.image-vector:focus-visible::before {
+svg.image-vector1:focus-visible::before {
     display: block;
 }
-svg.image-vector:hover path{
+svg.image-vector1:hover path{
    fill: #68A2CA;
 }
-svg.image-vector:focus-visible path{
+svg.image-vector1:focus-visible path{
    fill:  #68A2CA ;
     
 }
-.image-vector:active{
+.image-vector1:active{
     opacity: 0.3;
 }
 svg.htmlacademy-link{
@@ -1035,7 +1035,7 @@ opacity: 30%;
     margin-bottom: 94px;
     margin-top: 32px;
     border-radius: 4px;
-    background-color: rgb(216, 107, 5);
+    background-color:  rgba(255, 255, 255, 0.3)
 }
 .range-bar{
     position: absolute;
@@ -1157,20 +1157,31 @@ opacity: 30%;
     padding:0;
     display: flex;
 }
+
 .button-vector
 {
     display:flex;
     flex-wrap: wrap;
     margin-right: 8px;
+    border: 2px solid #E6E6E6;
+    padding:16px 17px;
+    border-radius: 4px;
+    outline: none;
+    
+   
 }
+
 .button-vector:hover{
-    outline: 2px solid #83B3D3;
+    border: 2px solid #83B3D3;
+    border-radius: 4px;
 }
 .button-vector:focus{
-    outline: 2px solid #83B3D3;
+    border: 2px solid #83B3D3;
+    border-radius: 4px;
 }
 .button-vector:active{
-    outline: 2px solid #000000;
+    border: 2px solid #000000;
+    border-radius: 4px;
 }
 .filter-border input{
     height: 48px;
@@ -1192,19 +1203,46 @@ opacity: 30%;
     width: 1057px;
     
 }
-.select-control{
-    margin:0;
-    padding:0;
-    margin-top: 44px;
-    margin-right: 81px ;
+.select{
+    position:relative;
+    display: flex;
+    align-items: center;
     width: 287px;
     height: 48px;
-    font-family: "PT Sans"; 
-    font-size: 18px;
-    line-height: 23px; 
-    color: #333333;
-    
+    margin-right: auto;
 }
+
+.select-control{
+    width: 100%;
+    padding-left: 19px;
+    padding-top:12px;
+    padding-bottom: 13px;
+    padding-right:127px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    border:2px solid #E6E6E6;
+    background-image: url(../images/Vector\ V.svg);
+    background-repeat: no-repeat;
+    background-position: right 21px center;
+    appearance: none;
+    box-shadow: none;
+    width: 287px;
+    height: 48px;
+
+}
+.select-control:hover,
+.select-control:focus {
+    
+    border: 2px solid #83B3D3;
+    border-radius: 4px;
+    outline: none;
+}
+.select-control:active{
+    outline: 2px solid #E6E6E6;
+    opacity: 30%;
+}
+
+
 .select-control-2{
 margin: 0;
 padding: 0;
@@ -1223,20 +1261,11 @@ border-radius: 4px;
    
 
 
-.select-control:hover{
-    outline: 2px solid #83B3D3;
-}
-.select-control:focus{
-    outline: 2px solid #83B3D3;
-}
-.select-control:active{
-    outline: 2px solid #E6E6E6;
-    opacity: 30%;
-}
+
 
 
 .product-list{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     margin-bottom: 34px;
     padding-left: 72px;
