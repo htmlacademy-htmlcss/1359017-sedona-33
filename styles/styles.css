@@ -33,6 +33,7 @@ body {
     width: 139px;
     margin-right: 47px;
     height: 70px;
+    position: relative;
 }
 .main-header >.navigation {
     display: flex;
@@ -83,12 +84,12 @@ body {
 .active::before{
     position: absolute;
 
-content: "";
-bottom: 0;
-border: 2px solid #756257;
-height: 0;
-width: 100%;
-top: 46px;
+    content: "";
+
+    border: 2px solid #756257;
+    height: 0;
+    width: 100%;
+    top: 46px;
 }
 
 
@@ -770,7 +771,7 @@ svg.htmlacademy-link{
     top: 15px;
 }
 .htmlacademy-link:focus-visible path{
-    fill: rgba(104, 162, 202, 1);
+    fill: #756257;
 }
 .htmlacademy-link:focus{
     outline: none;
@@ -1011,7 +1012,7 @@ opacity: 30%;
 .filter-interval-price {
     margin: 0;
     padding: 0;
-    
+    margin-bottom: 34px;
     
     font-family: "PT Sans";
     font-style: normal;
@@ -1073,7 +1074,7 @@ opacity: 30%;
 .button-blue{
     padding: 0;
     margin: 0;
-    margin-top: 34px;
+    margin-top: 60px;
     margin-right: 72px;
     margin-bottom: 20px;
     margin-left: 81px;
