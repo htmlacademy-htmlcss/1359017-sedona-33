@@ -964,10 +964,10 @@ outline: none;
     display: block;
 }
 .breadcrumbs-link-1:focus-visible path{
-    fill:;
+    
 }
 .breadcrumbs-link-2:focus-visible path{
-    fill:;
+    
 }
 .breadcrumbs-link-1:focus{
     outline: none;
@@ -1201,7 +1201,7 @@ label.price-filter-label:last-child::before {
 }
 
 
-}
+
 .price-filter-label:first-child{
     border-radius: 4px 0 0 4px;
   border-right-width: 0;
