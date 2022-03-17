@@ -1220,6 +1220,9 @@ label.price-filter-label:last-child::before {
         border-radius: 0 4px 4px 0;
       
 }
+.price-filter-label:hover {
+    border:2px solid rgba(255, 255, 255, 0.6);
+}
 .filter-border{
     display: grid;
   grid-template-columns: 144px 144px;
@@ -1423,7 +1426,7 @@ label.price-filter-label:last-child::before {
 .filter-border input{
     height: 48px;
     background: transparent;
-    border: 2px solid #FFFFFF;
+  
     box-sizing: border-box;
     padding-left: 19px;
     border-radius: 0 4px 4px 0;
