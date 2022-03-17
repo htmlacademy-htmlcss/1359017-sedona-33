@@ -276,21 +276,33 @@
   </footer>
   <div class="modal-container">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group">
-            <label class="visually-hidden" for="auth-check-in-hotel">Логин</label>
-            <input class="auth-form-field field" type="text" id="acheck-in-hotel" name="check-in hotel"
-              placeholder="27 апреля 2020">
+      </section>
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="arrival-date">
+            <label for="appointment-date">Дата заезда:</label>
+            <input class="dates" type="text" name="appointment-date" id="appointment-date" value="27 апреля 2020"
+              aria-describedby="appointment-date-warning">
+            <span class="comments comments--warning" id="appointment-date-warning">Мы не можем отправить вас в
+              прошлое.
+            </span>
           </p>
-          <p class="field-group">
-            <label class="visually-hidden" for="check-out">дата ваезда</label>
-            <input class="auth-form-field field" type="text" id="check-out" name="check-out" placeholder="1 сентября">
+          <p class="arrival-date">
+            <label for="end-date">Дата выезда:</label>
+            <input class="dates" type="text" name="appointment-date" id="end-date" value="1 сентября 2021"
+              aria-describedby="appointment-date-warning">
+            <span class="comments" id="end-date-warning">На эти даты есть свободные номера. Пока есть.
+              
+            </span>
           </p>
+
+
+          
         </form>
 
       </section>

@@ -954,13 +954,13 @@ outline: none;
     position: relative;
 }
 .breadcrumbs-link-1:focus-visible::before{
-    left:;
-    top:;
+    left: -8px;
+    top: -11px;
     display: block;
 }
 .breadcrumbs-link-2:focus-visible::before{
-    left:;
-    top:;
+    top: -4px;
+    left: -10px;
     display: block;
 }
 .breadcrumbs-link-1:focus-visible path{
@@ -1130,10 +1130,21 @@ outline: none;
     background-position: center;
 
 }
-label.price-filter-label::before {
+.control-input[type="radio"]:checked + .control-type{
+    border-radius: 50%;
+    background-image: url(../images/Ellipse-check.svg);
+} 
+label.price-filter-label:first-child:before {
     content: "от";
     position: absolute;
     top: 11px;
+    padding-left: 112px;
+}
+label.price-filter-label:last-child::before {
+    content: "до";
+    position: absolute;
+    top: 11px;
+    padding-left: 107px;
 }
 .filter-interval{
     width: 277px;
@@ -1158,11 +1169,7 @@ label.price-filter-label::before {
     line-height: 26px; 
     text-align: left;
 }
-.filter-border{
-   
-    
-   
-}
+
 .price-setting{
     border: none;
   width: 287px;
@@ -1185,11 +1192,26 @@ label.price-filter-label::before {
   
 
 }
+.price-filter-label:focus{
+    box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+}
+.price-filter-label:active{
+    background-color: #756257;
+
+}
+
+
+}
 .price-filter-label:first-child{
     border-radius: 4px 0 0 4px;
   border-right-width: 0;
   margin-right: 2px;
 
+}
+.price-filter-label:first-child:hover{
+    border-right-width: 2px solid rgba(255, 255, 255, 0.3);
+    margin-right: 0;
+  
 }
 .price-filter-label:last-child {
         position: relative;
