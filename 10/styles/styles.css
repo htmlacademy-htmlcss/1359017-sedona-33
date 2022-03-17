@@ -987,12 +987,7 @@ outline: none;
     left: -10px;
     
 }
-.breadcrumbs-link-1:focus path{
-    fill:;
-}
-.breadcrumbs-link-2:focus path{
-    fill:;
-}
+
 .breadcrumbs-link-1::before{
     position: absolute;
     border:3px solid #83B3D3;
