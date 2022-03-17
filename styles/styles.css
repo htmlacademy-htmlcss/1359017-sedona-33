@@ -977,14 +977,14 @@ outline: none;
 }
 .breadcrumbs-link-1:focus::before{
     display: block;
-    left:;
-    top:;
+    left: -8px;
+    top: -11px;
     
 }
 .breadcrumbs-link-2:focus::before{
     display: block;
-    left:;
-    top:;
+    top: -4px;
+    left: -10px;
     
 }
 .breadcrumbs-link-1:focus path{
@@ -1112,7 +1112,7 @@ opacity: 30%;
 
 }
 .control-type:hover{
-    background: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 .control-type:focus{
     border: 3px solid #83B3D3;
@@ -1130,10 +1130,15 @@ outline: none;
     height: 20px;
     border-radius: 4px;
     background-color: #FFFFFF;
-    background-image: url(../images/check.svg);
+    
     background-repeat: no-repeat;
     background-position: center;
 
+}
+label.price-filter-label::before {
+    content: "от";
+    position: absolute;
+    top: 11px;
 }
 .filter-interval{
     width: 277px;
@@ -1180,6 +1185,7 @@ outline: none;
     padding-right: 16px;
     border: 2px solid #ffffff;
     height: 48px;
+    position: relative;
   
   
 
@@ -1487,7 +1493,7 @@ border-radius: 4px;
 background-position: right 21px center;
 }
 .product-list{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
     margin-bottom: 34px;
     padding-left: 72px;
