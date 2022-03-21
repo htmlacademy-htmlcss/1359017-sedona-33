@@ -953,7 +953,7 @@ svg.htmlacademy-link:focus-visible path{
 box-sizing: border-box;
 border-radius: 4px;
 width: 28px;
-height: 27px;
+
 outline: none;
 }
 
@@ -987,13 +987,13 @@ outline: none;
     display:block;
     padding: 3px;
     left: 45px;
-    top: -8px;
+    top: -4px;
 }
 .breadcrumbs-link::after{
     position:absolute;
     border:3px solid #83B3D3;
-    width: 73px;
-    height: 21px;
+    width: 77px;
+    height: 15px;
     content: "";
     border-radius: 4px;
     display: none;
