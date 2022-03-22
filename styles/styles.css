@@ -1111,24 +1111,46 @@ opacity: 30%;
 .control-type:active{
     background-color:rgba(255, 255, 255, 0.3);
 }
-.control-input[type="checkbox"]:checked+.control-type{
+
+.control-type[type="checkbox"]:checked{
     background-image: url(../images/check.svg);
    
 }
 .control-type{
     position: absolute; 
-    top:2px;
-    left:0;
+    
+    left:-19px;
     width:20px;
     height: 20px;
     border-radius: 4px;
     background-color: #FFFFFF;
-    
+    appearance: none;
     background-repeat: no-repeat;
     background-position: center;
 
 }
-.control-input[type="radio"]:checked + .control-type{
+.control-type[type="checkbox"]:checked:before{
+    background-image: url(../images/check.svg);
+    background-repeat:no-repeat;
+   background-position:center;
+}
+.control-type::before{
+    content:"";
+    position:absolute;
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    
+    
+}
+.control-type:focus::before{
+    display:block;
+    background: rgba(255, 255, 255, 0.6);
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+.control-type[type="radio"]:checked{
     border-radius: 50%;
     background-image: url(../images/Ellipse-check.svg);
 } 
@@ -1987,7 +2009,7 @@ uct-card-button-button-blue{
     } 
 
 .modal-container-close {
-    display:none;
+    display:non;
   }
   
     .modal {
@@ -2002,6 +2024,7 @@ uct-card-button-button-blue{
     .modal-auth {
      width: 715px;
      box-sizing: border-box;
+     border-radius: 30px;
     }
     .modal-close-button {
     position: absolute;
@@ -2018,7 +2041,7 @@ uct-card-button-button-blue{
     cursor: pointer;
     }
     .modal-close-button:hover {
-        background: #e6e6e6;
+        background-color: #e6e6e6;
     }
       
     .modal-close-button:focus {
@@ -2026,7 +2049,7 @@ uct-card-button-button-blue{
     }
       
     .modal-close-button:active {
-        color: rgba(0, 0, 0, 0.3);
+         opacity: 0.3;
      }
       
     .modal-title {
@@ -2052,7 +2075,7 @@ uct-card-button-button-blue{
 }
 .arrival-date {
     display: grid;
-    
+    margin-bottom: 11px;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
@@ -2137,6 +2160,9 @@ uct-card-button-button-blue{
     gap: 73px 56px;
     align-items: center;
   }
+  .people-adults {
+    margin: 0;
+  }
   .people-child{
     position: relative;
   }
@@ -2154,19 +2180,29 @@ uct-card-button-button-blue{
     margin: 0;
     color: rgba(0, 0, 0, 0.3);
   }
-  .modal-action:hover {
+  .modal-action:hover path {
     color: #000000;
+    opacity: 1;
   }
   
   .modal-action:focus {
-    color: #000000;
+    
     border: 3px solid #83b3d3;
   
     border-radius: 4px;
   }
-  .modal-action:active {
-    color: rgba(0, 0, 0, 0.3);
+  .modal-action:focus path{
+    opacity: 1;
   }
+  .modal-action:focus-visible{
+    outline: none;
+  }
+  .modal-action:active path{
+    opacity: 0.2;
+  }
+ .button-modal:focus-visible{
+    outline: none;
+ }
   
   
   
@@ -2197,6 +2233,7 @@ uct-card-button-button-blue{
     cursor: pointer;
     display: grid;
     place-items: center;
+    margin-bottom: 14px;
   }
   
   .tooltip-toggle:hover {
@@ -2231,12 +2268,12 @@ uct-card-button-button-blue{
     width: 256px;
     top: 100%;
     left: 50%;
-    margin-left: -128px;
+    box-sizing: border-box;
   }
   
   .tooltip-text::after {
     content: "";
-    background-image: url("../images/tooltip-icon.svg");
+    background-image: url("../images/arrow-tooltip.svg");
     width: 19px;
     height: 9px;
     position: absolute;
