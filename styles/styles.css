@@ -2245,6 +2245,7 @@ uct-card-button-button-blue{
     z-index: 20;
   }
   .button-modal {
+      padding:0;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -2257,6 +2258,8 @@ uct-card-button-button-blue{
     border: none;
     color: #ffffff;
     margin-top: 40px;
+    height: 60px;
+    margin-bottom: 70px;
   }
   .button-modal:hover {
     background: #68a2ca;
