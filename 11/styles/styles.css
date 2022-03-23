@@ -1274,9 +1274,9 @@ label.price-filter-label:last-child::before {
 }
 .price-filter-label:first-child:before{
     position:absolute;
-    border: 2px solid #FFFFFF;
+    
     box-sizing: border-box;
-    box-shadow: 0px 0px 0px 3px #81B3D2;
+    
     border-radius: 4px 0px 0px 4px;
 }
 
@@ -1289,7 +1289,10 @@ label.price-filter-label:last-child::before {
     box-shadow: 0px 0px 0px 3px #81B3D2;
     border-radius: 0px 4px 4px 0px; 
 }
-
+label.price-filter-label:focus-within {
+    outline: solid #81b3d2 3px;
+    box-shadow: inset 0px 0px 0px 3px #81b3d2;
+}
 
 
 
@@ -1417,8 +1420,9 @@ label.price-filter-label:last-child::before {
 .button-usual:hover{
     opacity: 60%;
 }
-.button-usual:focus{
+.button-usual:focus-visible{
     outline: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 .button-usual:active{
     opacity: 30%;
