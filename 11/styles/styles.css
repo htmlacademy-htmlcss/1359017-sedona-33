@@ -1344,7 +1344,7 @@ label.price-filter-label:focus-within {
 .range-toggle:focus:before{
     border: 3px solid #83B3D3;
     box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
-    border-radius: 5px;
+    border-radius: 9px;
 }
 .range-toggle:focus-visible { 
     outline: none; 
@@ -1354,7 +1354,7 @@ label.price-filter-label:focus-within {
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     box-sizing: content-box; 
-    left: -1px; 
+     
     top: -10px;
 
 }
