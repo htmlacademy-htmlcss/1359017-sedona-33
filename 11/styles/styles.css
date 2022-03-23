@@ -1103,19 +1103,12 @@ opacity: 30%;
 .control-type:hover{
     background-color: rgba(255, 255, 255, 0.6);
 }
-.control-type:focus{
-    outline: 3px solid #83B3D3;
-    border-radius: 4px;
-   
-}
+
 .control-type:active{
     background-color:rgba(255, 255, 255, 0.3);
 }
 
-.control-type[type="checkbox"]:checked{
-    background-image: url(../images/check.svg);
-   
-}
+
 .control-type{
     position: absolute; 
     
@@ -1146,16 +1139,21 @@ opacity: 30%;
 }
 .control-type:focus::before{
     display:block;
-    background: rgba(255, 255, 255, 0.6);
+    
     border: 3px solid #83B3D3;
     border-radius: 4px;
 }
-.control-type[type="radio"]:checked{
+.control-type[type="radio"]:checked:before{
     border-radius: 50%;
     background-image: url(../images/Ellipse-check.svg);
+    background-repeat:no-repeat;
+    background-position:center;
 } 
-.control-input[type="radio"]+.control-type{
-    border-radius:50%
+.control-type[type="radio"]:before{
+    border-radius: 50%;
+}
+.control-type[type="radio"]{
+    border-radius: 50%;
 }
 
 label.price-filter-label:first-child:before {
@@ -1216,9 +1214,7 @@ label.price-filter-label:last-child::before {
   
 
 }
-.price-filter-label:focus{
-    box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
-}
+
 .price-filter-label:active{
     background-color: #756257;
 
@@ -1273,12 +1269,28 @@ label.price-filter-label:last-child::before {
     background: transparent;
     height: 48px;
     margin-bottom: 32px;
+    
   
+}
+.price-filter-label:first-child:before{
+    position:absolute;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.price-filter-label:first-child:focus::before{
+    display:block;
+}
+.price-filter-label:last-child:focus{
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+    border-radius: 0px 4px 4px 0px; 
 }
 
 
-  
-  
 
 
 .range{
@@ -1313,11 +1325,30 @@ label.price-filter-label:last-child::before {
     border: none; 
     top: -8px;
 }
+.range-toggle::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    
+}
+.range-toggle:focus:before{
+    border: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+}
+.range-toggle:active{
+    border: 2px solid #83B3D3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+}
 .toggle-min {
     padding:0;
     margin:0;
     top:-6px;
-    
     border:none;
     top: -8px;
   }
@@ -2009,7 +2040,7 @@ uct-card-button-button-blue{
     } 
 
 .modal-container-close {
-    display:non;
+    display:none;
   }
   
     .modal {
