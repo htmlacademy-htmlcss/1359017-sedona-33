@@ -86,6 +86,7 @@
 
 
       <section class="advantage">
+        <h2 class="visually-hidden">Преимущества</h2>
         <section class="small-town">
           <h2 class="inskription">Седона — небольшой городок в Аризоне,
             заслуживающий большего!</h2>
@@ -288,8 +289,8 @@
 
         <form class="appointment-form-auth" action="https://echo.htmlacademy.ru/" method="post">
           <p class="arrival-date">
-            <label for="appointment-date">Дата заезда:</label>
-            <input class="dates" type="text" name="appointment-date" id="appointment-date" placeholder="27 апреля 2020"
+            <label for="appointment-date-arrival">Дата заезда:</label>
+            <input class="dates" type="text" name="appointment-date" id="appointment-date-arrival" placeholder="27 апреля 2020"
               aria-describedby="appointment-date-warning">
               <svg class="calendar" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity=".3" fill="#000">
@@ -304,7 +305,7 @@
           </p>
           <p class="arrival-date">
             <label for="end-date">Дата выезда:</label>
-            <input class="dates" type="text" name="appointment-date" id="end-date" value="1 сентября 2021"
+            <input class="dates" type="text" name="appointment-date" id="end-date" placeholder="1 сентября 2021"
               aria-describedby="appointment-date-warning">
               <svg class="calendar" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#000">
                 <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/>
@@ -321,37 +322,37 @@
               <p> <label for="appointment-date-adults">Взрослые:</label></p>
             </div>
             <div class="people-child">
-              <input class="number-of-people" type="text" name="appointment-date" id="appointment-date" value="2">
+              <input class="number-of-people" type="text" name="appointment-date" id="appointment-date-adults" placeholder="2">
               <button class="button-minus modal-action" type="button">
                 <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/>
                 
-                <title id="minus">Минус</title>
+                <title id="minus-adults">Минус</title>
               </svg>
               </button>
               <button class="button-plus modal-action" type="button"> 
                 <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3"/>
-                  <title id="plus">Плюс</title>
+                  <title id="plus-adults">Плюс</title>
                 </svg>
               </button>  
             </div>  
             <div class="people-child">
-              <label for="appointment-date">Дети: </label>
+              <label for="appointment-date-children">Дети: </label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <button class="tooltip-toggle" type="button" aria-label="tooltip-label">
                       <svg width="1" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a">
                         <path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs>
                       </svg>
                     </button>
-                    <span class="tooltip-text" class="tooltip-text" role="tooltip">Укажите количество детей, которые
+                    <span class="tooltip-text" role="tooltip">Укажите количество детей, которые
                       будут с вами, возраст которых от 6 до 18 лет. Дети
                       до 6 лет размещаются бесплатно.
                     </span>
                   </span>
             </div>
             <div class="number-child">
-              <input class="number-of-people" type="text" name="appointment-date" id="appointment-date" value="1">
+              <input class="number-of-people" type="text" name="appointment-date" id="appointment-date-children" placeholder="1">
               <button class="button-minus modal-action" type="button">
                 <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/>
@@ -361,7 +362,7 @@
               </button>
               <button class="button-plus modal-action" type="button"> <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3"/>
-                <title id="plus">Плюс</title>
+                <title id="plus-people">Плюс</title>
               </svg>
             </button>
           </div>
@@ -373,15 +374,15 @@
 
 
           
-        </form>
+        
 
-      </section>
+      
 
 
 
-    </div>
+    
 
-  </div>
+  
 
 </body>
 
