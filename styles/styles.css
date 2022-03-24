@@ -952,7 +952,7 @@ svg.htmlacademy-link:focus-visible path{
     
 box-sizing: border-box;
 border-radius: 4px;
-width: 28px;
+
 
 outline: none;
 }
@@ -986,7 +986,7 @@ outline: none;
 .breadcrumbs-link:focus::after{
     display:block;
     padding: 3px;
-    left: 45px;
+    left: 29px;
     top: -4px;
 }
 .breadcrumbs-link::after{
@@ -1008,6 +1008,7 @@ outline: none;
 
 svg.breadcrumbs-item-home{
     position: relative;
+    padding-right: 0;
 }
 svg.breadcrumbs-item-home:focus-visible::before{
     display: block;
@@ -1103,37 +1104,60 @@ opacity: 30%;
 .control-type:hover{
     background-color: rgba(255, 255, 255, 0.6);
 }
-.control-type:focus{
-    outline: 3px solid #83B3D3;
-    border-radius: 4px;
-   
-}
+
 .control-type:active{
     background-color:rgba(255, 255, 255, 0.3);
 }
-.control-input[type="checkbox"]:checked+.control-type{
-    background-image: url(../images/check.svg);
-   
-}
+
+
 .control-type{
     position: absolute; 
-    top:2px;
-    left:0;
+    
+    left:-19px;
     width:20px;
     height: 20px;
     border-radius: 4px;
     background-color: #FFFFFF;
-    
+    appearance: none;
     background-repeat: no-repeat;
     background-position: center;
 
 }
-.control-input[type="radio"]:checked + .control-type{
+.control-type[type="checkbox"]:checked:before{
+    background-image: url(../images/check.svg);
+    background-repeat:no-repeat;
+   background-position:center;
+}
+.control-type::before{
+    content:"";
+    position:absolute;
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    
+    
+}
+.control-type:focus::before{
+    display:block;
+    
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+.control-type:focus-visible {
+    outline:none ;
+}
+.control-type[type="radio"]:checked:before{
     border-radius: 50%;
     background-image: url(../images/Ellipse-check.svg);
+    background-repeat:no-repeat;
+    background-position:center;
 } 
-.control-input[type="radio"]+.control-type{
-    border-radius:50%
+.control-type[type="radio"]:before{
+    border-radius: 50%;
+}
+.control-type[type="radio"]{
+    border-radius: 50%;
 }
 
 label.price-filter-label:first-child:before {
@@ -1194,9 +1218,7 @@ label.price-filter-label:last-child::before {
   
 
 }
-.price-filter-label:focus{
-    box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
-}
+
 .price-filter-label:active{
     background-color: #756257;
 
@@ -1251,12 +1273,31 @@ label.price-filter-label:last-child::before {
     background: transparent;
     height: 48px;
     margin-bottom: 32px;
+    
   
 }
+.price-filter-label:first-child:before{
+    position:absolute;
+    
+    box-sizing: border-box;
+    
+    border-radius: 4px 0px 0px 4px;
+}
 
+.price-filter-label:first-child:focus::before{
+    display:block;
+}
+.price-filter-label:last-child:focus{
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+    border-radius: 0px 4px 4px 0px; 
+}
+label.price-filter-label:focus-within {
+    outline: solid #81b3d2 3px;
+    box-shadow: inset 0px 0px 0px 3px #81b3d2;
+}
 
-  
-  
 
 
 .range{
@@ -1291,11 +1332,36 @@ label.price-filter-label:last-child::before {
     border: none; 
     top: -8px;
 }
+.range-toggle::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    border-radius: 9px;
+    
+}
+.range-toggle:focus:before{
+    border: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
+    border-radius: 9px;
+}
+.range-toggle:focus-visible { 
+    outline: none; 
+}
+.range-toggle:active:before{
+    border: 2px solid #83B3D3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 9px;
+    left: -2px; 
+    top: -2px;
+}
+}
 .toggle-min {
     padding:0;
     margin:0;
     top:-6px;
-    
     border:none;
     top: -8px;
   }
@@ -1364,8 +1430,9 @@ label.price-filter-label:last-child::before {
 .button-usual:hover{
     opacity: 60%;
 }
-.button-usual:focus{
+.button-usual:focus-visible{
     outline: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 .button-usual:active{
     opacity: 30%;
@@ -2002,6 +2069,7 @@ uct-card-button-button-blue{
     .modal-auth {
      width: 715px;
      box-sizing: border-box;
+     border-radius: 30px;
     }
     .modal-close-button {
     position: absolute;
@@ -2018,7 +2086,7 @@ uct-card-button-button-blue{
     cursor: pointer;
     }
     .modal-close-button:hover {
-        background: #e6e6e6;
+        background-color: #e6e6e6;
     }
       
     .modal-close-button:focus {
@@ -2026,7 +2094,7 @@ uct-card-button-button-blue{
     }
       
     .modal-close-button:active {
-        color: rgba(0, 0, 0, 0.3);
+         opacity: 0.3;
      }
       
     .modal-title {
@@ -2052,7 +2120,7 @@ uct-card-button-button-blue{
 }
 .arrival-date {
     display: grid;
-    
+    margin-bottom: 11px;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
@@ -2099,6 +2167,9 @@ uct-card-button-button-blue{
     outline: 2px solid #000000;
     box-sizing: border-box;
   }
+  .dates:active::placeholder, .number-of-people::placeholder{
+    color: #000;
+  }
   .number-of-people {
     display: flex;
 
@@ -2137,6 +2208,9 @@ uct-card-button-button-blue{
     gap: 73px 56px;
     align-items: center;
   }
+  .people-adults p {
+    margin: 0;
+  }
   .people-child{
     position: relative;
   }
@@ -2154,19 +2228,29 @@ uct-card-button-button-blue{
     margin: 0;
     color: rgba(0, 0, 0, 0.3);
   }
-  .modal-action:hover {
+  .modal-action:hover path {
     color: #000000;
+    opacity: 1;
   }
   
   .modal-action:focus {
-    color: #000000;
+    
     border: 3px solid #83b3d3;
   
     border-radius: 4px;
   }
-  .modal-action:active {
-    color: rgba(0, 0, 0, 0.3);
+  .modal-action:focus path{
+    opacity: 1;
   }
+  .modal-action:focus-visible{
+    outline: none;
+  }
+  .modal-action:active path{
+    opacity: 0.2;
+  }
+ .button-modal:focus-visible{
+    outline: none;
+ }
   
   
   
@@ -2197,6 +2281,7 @@ uct-card-button-button-blue{
     cursor: pointer;
     display: grid;
     place-items: center;
+    margin-bottom: 14px;
   }
   
   .tooltip-toggle:hover {
@@ -2231,12 +2316,12 @@ uct-card-button-button-blue{
     width: 256px;
     top: 100%;
     left: 50%;
-    margin-left: -128px;
+    box-sizing: border-box;
   }
   
   .tooltip-text::after {
     content: "";
-    background-image: url("../images/tooltip-icon.svg");
+    background-image: url("../images/arrow-tooltip.svg");
     width: 19px;
     height: 9px;
     position: absolute;
@@ -2245,6 +2330,7 @@ uct-card-button-button-blue{
     z-index: 20;
   }
   .button-modal {
+      padding:0;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -2257,6 +2343,8 @@ uct-card-button-button-blue{
     border: none;
     color: #ffffff;
     margin-top: 40px;
+    height: 60px;
+    margin-bottom: 70px;
   }
   .button-modal:hover {
     background: #68a2ca;
